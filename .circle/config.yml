@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    branches:
+      only:
+        - master
+    steps:
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - 'b5:9f:a0:51:31:22:2a:5c:6a:42:1e:64:9f:6d:14:4f'
+      # - checkout
+      # - restore_cache:
+      #     keys:
+      #       - dependencies_bigfront
+      - run: echo "A first hello"
+      # - run: npm -v
+      # - run:
+      #     name: Install
+      #     command: yarn install
+      # - save_cache:
+      #     paths:
+      #       - node_modules
+      #     key: dependencies_bigfront
+      # - run:
+      #     name: Build
+      #     command: yarn build
+      # - run:
+      #     name: grant authority
+      #     # 赋予执行权限 shell chmod +x
+      #     # 执行shell脚本
+      #     command: chmod +x scripts/deploy.sh
+      # - run:
+      #     name: deloy github
+      #     command: ./scripts/deploy.sh
