@@ -34,6 +34,15 @@ const nav = [
             link: '/devops/cicd/01.md'
           }
         ]
+      },
+      {
+        text: '博客搭建相关',
+        items: [
+          {
+            text: 'vuepress 新手指南针',
+            link: '/devops/blog/'
+          }
+        ]
       }
     ]
   },
@@ -48,6 +57,15 @@ const nav = [
             link: '/basic/reg/'
           }
         ]
+      },
+      {
+        text: '计算机基础',
+        items: [
+          {
+            text: '数据结构',
+            link: '/basic/ds/'
+          }
+        ]
       }
     ]
   }
@@ -58,6 +76,11 @@ const sidebar = {
       title: '基础语言',
       collapsable: false,
       children: genSidebarConfig('basic/reg', siderBarOptions)
+    },
+    {
+      title: '数据结构',
+      collapsable: false,
+      children: genSidebarConfig('basic/ds', siderBarOptions)
     }
   ],
   '/devops/': [
@@ -70,6 +93,11 @@ const sidebar = {
       title: 'CI/CD相关',
       collapsable: false,
       children: genSidebarConfig('devops/cicd', siderBarOptions)
+    },
+    {
+      title: '博客搭建相关',
+      collapsable: false,
+      children: genSidebarConfig('devops/blog', siderBarOptions)
     }
   ]
 }
