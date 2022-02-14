@@ -66,8 +66,21 @@ const nav = [
             link: '/basic/ds/'
           }
         ]
+      },
+      {
+        text: 'CSS相关',
+        items: [
+          {
+            text: 'float布局',
+            link: '/basic/css/float.md'
+          }
+        ]
       }
     ]
+  },
+  {
+    text: '前端笔记',
+    link: '/note/moblie/'
   }
 ]
 const sidebar = {
@@ -81,6 +94,11 @@ const sidebar = {
       title: '数据结构',
       collapsable: false,
       children: genSidebarConfig('basic/ds', siderBarOptions)
+    },
+    {
+      title: 'CSS相关',
+      collapsable: false,
+      children: genSidebarConfig('basic/css', siderBarOptions)
     }
   ],
   '/devops/': [
@@ -98,6 +116,13 @@ const sidebar = {
       title: '博客搭建相关',
       collapsable: false,
       children: genSidebarConfig('devops/blog', siderBarOptions)
+    }
+  ],
+  '/note/': [
+    {
+      title: '前端笔记',
+      collapsable: false,
+      children: genSidebarConfig('note/moblie', siderBarOptions)
     }
   ]
 }
