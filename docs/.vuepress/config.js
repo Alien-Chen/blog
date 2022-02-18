@@ -75,12 +75,49 @@ const nav = [
             link: '/basic/css/float.md'
           }
         ]
+      },
+      {
+        text: 'HTML相关',
+        items: [
+          {
+            text: 'HTML基础',
+            link: '/basic/html/'
+          }
+        ]
+      },
+      {
+        text: 'Websocket相关',
+        items: [
+          {
+            text: 'Websoket基础',
+            link: '/basic/websocket/'
+          }
+        ]
       }
     ]
   },
   {
     text: '前端笔记',
-    link: '/note/moblie/'
+    items: [
+      {
+        text: '移动端相关',
+        items: [
+          {
+            text: '移动端篇',
+            link: '/note/moblie/'
+          }  
+        ]
+      },
+      {
+        text: '浏览器相关',
+        items: [
+          {
+            text: '浏览器兼容篇',
+            link: '/note/browser/'
+          } 
+        ]
+      }
+    ]
   }
 ]
 const sidebar = {
@@ -99,7 +136,17 @@ const sidebar = {
       title: 'CSS相关',
       collapsable: false,
       children: genSidebarConfig('basic/css', siderBarOptions)
-    }
+    },
+    {
+      title: 'HTML相关',
+      collapsable: false,
+      children: genSidebarConfig('basic/html', siderBarOptions)
+    },
+    {
+      title: 'Websocket相关',
+      collapsable: false,
+      children: genSidebarConfig('basic/websocket', siderBarOptions)
+    },
   ],
   '/devops/': [
     {
@@ -120,9 +167,14 @@ const sidebar = {
   ],
   '/note/': [
     {
-      title: '前端笔记',
+      title: '移动端相关',
       collapsable: false,
       children: genSidebarConfig('note/moblie', siderBarOptions)
+    },
+    {
+      title: '浏览器相关',
+      collapsable: false,
+      children: genSidebarConfig('note/browser', siderBarOptions)
     }
   ]
 }
