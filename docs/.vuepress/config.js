@@ -75,6 +75,10 @@ const nav = [
             link: '/basic/css/float.md'
           },
           {
+            text: 'CSS预处理器',
+            link: '/basic/css/preprocessor.md'
+          },
+          {
             text: 'CSS 动画基础',
             link: '/basic/css/animation.md'
           },
