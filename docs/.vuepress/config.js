@@ -73,6 +73,14 @@ const nav = [
           {
             text: 'float布局',
             link: '/basic/css/float.md'
+          },
+          {
+            text: 'CSS 动画基础',
+            link: '/basic/css/animation.md'
+          },
+          {
+            text: 'CSS 动画强化',
+            link: '/basic/css/animation-strong.md'
           }
         ]
       },
