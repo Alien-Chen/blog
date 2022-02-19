@@ -13,5 +13,5 @@ RUN npm run docs:build
 # 将dist 中的内容拷贝到 nginx中
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/docs/.vuepress/dist /usr/xiaoqiang-blog/nginx/html
-EXPOSE 90
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
