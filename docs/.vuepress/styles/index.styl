@@ -18,9 +18,10 @@
   color: #fff;
 }
 
-.index-page-class .nav-links a, .index-page-class .icon.outbound{
+.index-page-class .icon.outbound{
   color: #fff;
 }
+
 .index-page-class .site-name  {
   color: #fff !important;
 }
@@ -35,4 +36,15 @@
 blockquote {
   border-left: 0.25rem solid #b6cd59 !important;
   padding: 0.25rem 1rem 0.25rem 1rem !important;
+}
+
+@media (max-width: 720px) {
+  .index-page-class .nav-links .dropdown-title .title {
+    color: var(--text-color);
+  }
+}
+@media (min-width: 720px) {
+  .index-page-class .nav-links .dropdown-title .title {
+    color: #fff;
+  }
 }

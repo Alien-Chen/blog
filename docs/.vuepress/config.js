@@ -128,9 +128,25 @@ const nav = [
             link: '/note/browser/'
           } 
         ]
+      },
+      {
+        text: 'NODE相关',
+        items: [
+          {
+            text: 'koa中间件原理篇',
+            link: '/note/node/'
+          } 
+        ]
       }
     ]
   }
+  // {
+  //   text: '联系',
+  //   icon: 'reco-message',
+  //   items: [
+  //     {text: 'GitHub', link: 'https://github.com/Alien-Chen', icon: 'reco-github'}
+  //   ]
+  // }
 ]
 const sidebar = {
   '/basic/': [
@@ -187,6 +203,11 @@ const sidebar = {
       title: '浏览器相关',
       collapsable: false,
       children: genSidebarConfig('note/browser', siderBarOptions)
+    },
+    {
+      title: 'NODE相关',
+      collapsable: false,
+      children: genSidebarConfig('note/node', siderBarOptions)
     }
   ]
 }
@@ -194,7 +215,8 @@ module.exports = {
  title: '小强解忧杂货铺', 
  base: '/',
  description: '那一年只追逐自由，现在只能追逐着学不完的知识。',
- head: [
+  head: [
+   ["link", { rel: "icon", href: "/favicon.ico" }],
    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
  ],
  theme:'reco',
@@ -217,7 +239,10 @@ module.exports = {
    subSidebar: 'auto',
    // 博客配置
    nav: nav,
-   sidebar: sidebar
+
+   sidebar: sidebar,
+   author: "陈小强",
+  //  logo: 'https://zyj_yida.gitee.io/source/img/ico/logo.png',
   }
 }
 

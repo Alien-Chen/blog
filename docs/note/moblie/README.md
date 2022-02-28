@@ -31,7 +31,7 @@ title: '移动端篇'
 
 （2）用Bootstrap的栅格系统
 
-（3）Flexible方案 （推荐）[参考文章](https://juejin.cn/post/6894044091836563469#heading-2)
+（3）Flexible方案 （推荐）[好文推荐](https://juejin.cn/post/6894044091836563469#heading-2)
 
 ## 3、解决Android浏览器查看背景图片模糊的问题？
 这个问题是 devicePixelRatio的不同导致的，因为手机分辨率太小，如果按照分辨率来显示网页，字会非常小，所以苹果系统当初就把 iPhone4的960×640像素的分辨率在网页里更改为480×320像素，这样 devicePixelRatio=2。
