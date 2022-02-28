@@ -221,7 +221,7 @@ module.exports = {
  ],
  theme:'reco',
  markdown: {
-   lineNumbers: false // 代码块显示行号
+   lineNumbers: true // 代码块显示行号
  },
  themeConfig: {
    type: 'blog',
@@ -241,8 +241,7 @@ module.exports = {
    nav: nav,
 
    sidebar: sidebar,
-   author: "陈小强",
-  //  logo: 'https://zyj_yida.gitee.io/source/img/ico/logo.png',
+   author: "陈小强"
   }
 }
 
