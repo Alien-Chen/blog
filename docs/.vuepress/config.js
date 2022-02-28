@@ -139,14 +139,14 @@ const nav = [
         ]
       }
     ]
+  },
+  {
+    text: '联系',
+    icon: 'reco-message',
+    items: [
+      {text: 'GitHub', link: 'https://github.com/Alien-Chen', icon: 'reco-github'}
+    ]
   }
-  // {
-  //   text: '联系',
-  //   icon: 'reco-message',
-  //   items: [
-  //     {text: 'GitHub', link: 'https://github.com/Alien-Chen', icon: 'reco-github'}
-  //   ]
-  // }
 ]
 const sidebar = {
   '/basic/': [
