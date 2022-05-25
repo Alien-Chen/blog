@@ -112,6 +112,15 @@ const nav = [
     text: '前端笔记',
     items: [
       {
+        text: '组件库相关',
+        items: [
+          {
+            text: '组件库开发流程',
+            link: '/note/component-lib/'
+          }
+        ]
+      },
+      {
         text: '移动端相关',
         items: [
           {
@@ -194,6 +203,11 @@ const sidebar = {
     }
   ],
   '/note/': [
+    {
+      title: '组件库相关',
+      collapsable: false,
+      children: genSidebarConfig('note/component-lib', siderBarOptions)
+    },
     {
       title: '移动端相关',
       collapsable: false,
