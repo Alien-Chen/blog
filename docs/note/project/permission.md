@@ -85,9 +85,8 @@ tags:
      3. 通过 router.addRoute 方法将路由表加入到 routes中
      4. 我们有 permissions 就可以通过指令的形式进行组件级的权限控制
      5. 根据 menuList 我们可以生成侧边栏
-
      ```
-     
+
      // 路由守卫逻辑
      router.beforeEach(async (to, from, next) => {
         if (getToken()) {
