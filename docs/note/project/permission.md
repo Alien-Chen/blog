@@ -87,6 +87,7 @@ tags:
      5. 根据 menuList 我们可以生成侧边栏
 
      ```
+     
      // 路由守卫逻辑
      router.beforeEach(async (to, from, next) => {
         if (getToken()) {
