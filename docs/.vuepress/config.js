@@ -116,11 +116,19 @@ const nav = [
     text: '前端手记',
     items: [
       {
+<<<<<<< HEAD
         text: '实际项目相关',
         items: [
           {
             text: '权限管理体系',
             link: '/note/project/permission.md'
+=======
+        text: '组件库相关',
+        items: [
+          {
+            text: '组件库开发流程',
+            link: '/note/component-lib/'
+>>>>>>> cf7e33e3fed6e825a569ab817606ac7b04e02deb
           }
         ]
       },
@@ -208,9 +216,15 @@ const sidebar = {
   ],
   '/note/': [
     {
+<<<<<<< HEAD
       title: '实际项目相关',
       collapsable: false,
       children: genSidebarConfig('note/project', siderBarOptions)
+=======
+      title: '组件库相关',
+      collapsable: false,
+      children: genSidebarConfig('note/component-lib', siderBarOptions)
+>>>>>>> cf7e33e3fed6e825a569ab817606ac7b04e02deb
     },
     {
       title: '移动端相关',
