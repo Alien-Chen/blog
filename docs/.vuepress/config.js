@@ -246,7 +246,7 @@ const sidebar = {
 }
 module.exports = {
  title: '小强解忧杂货铺', 
- base: '/blog',
+ base: '/blog/',
  description: '那一年只追逐自由，现在只能追逐着学不完的知识。',
   head: [
    ["link", { rel: "icon", href: "/favicon.ico" }],
