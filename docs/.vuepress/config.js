@@ -27,11 +27,15 @@ const nav = [
         items: [
           {
             text: 'jenkins + github',
-            link: '/devops/cicd/'
+            link: '/devops/cicd/00.md'
           },
           {
             text: 'Circle CI',
             link: '/devops/cicd/01.md'
+          },
+          {
+            text: '私有库搭建',
+            link: '/devops/cicd/02.md'
           }
         ]
       },
@@ -109,8 +113,17 @@ const nav = [
     ]
   },
   {
-    text: '前端笔记',
+    text: '前端手记',
     items: [
+      {
+        text: '实际项目相关',
+        items: [
+          {
+            text: '权限管理体系',
+            link: '/note/project/permission.md'
+          }
+        ]
+      },
       {
         text: '移动端相关',
         items: [
@@ -194,6 +207,11 @@ const sidebar = {
     }
   ],
   '/note/': [
+    {
+      title: '实际项目相关',
+      collapsable: false,
+      children: genSidebarConfig('note/project', siderBarOptions)
+    },
     {
       title: '移动端相关',
       collapsable: false,
