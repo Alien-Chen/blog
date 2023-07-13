@@ -125,6 +125,10 @@ const nav = [
           {
             text: 'Rrweb落地龙易保具体实现',
             link: '/note/project/rrweb.md'
+          },
+          {
+            text: '低代码平台搭建(一)',
+            link: '/note/project/lowCode.md'
           }
         ]
       },
