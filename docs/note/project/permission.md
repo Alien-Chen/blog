@@ -1,6 +1,6 @@
 ---
 sidebarDepth: 2
-title: '权限管理方案'
+title: '权限管理落地方案'
 tags: 
   - RBAC
   - 权限管理
@@ -93,7 +93,7 @@ tags:
           // 登陆后，直接放行
           // 设置当前用户的信息，包括姓名，头像，角色，权限信息
           await setUserInfoAction();
-          
+
           // 设置当前用户的左侧菜单
           await generateMenusAction(userState.permissions);
           // 根据菜单栏生成路由

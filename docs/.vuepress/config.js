@@ -121,6 +121,10 @@ const nav = [
           {
             text: '权限管理体系',
             link: '/note/project/permission.md'
+          },
+          {
+            text: 'Rrweb落地龙易保具体实现',
+            link: '/note/project/rrweb.md'
           }
         ]
       },
