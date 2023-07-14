@@ -129,6 +129,10 @@ const nav = [
           {
             text: '低代码平台搭建(一)',
             link: '/note/project/lowCode.md'
+          },
+          {
+            text: '低代码平台搭建(二)',
+            link: '/note/project/lowCode02.md'
           }
         ]
       },
