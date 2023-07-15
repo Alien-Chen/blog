@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CRM平台构建速度优化篇 | 小强解忧杂货铺</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="那一年只追逐自由，现在只能追逐着学不完的知识。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.abe61e79.css" as="style"><link rel="preload" href="/blog/assets/js/app.476c488a.js" as="script"><link rel="preload" href="/blog/assets/js/3.3eccb014.js" as="script"><link rel="preload" href="/blog/assets/js/1.1ef0c856.js" as="script"><link rel="preload" href="/blog/assets/js/46.06cb77bc.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.f6e2f817.js"><link rel="prefetch" href="/blog/assets/js/11.08ab77c7.js"><link rel="prefetch" href="/blog/assets/js/12.db4c5095.js"><link rel="prefetch" href="/blog/assets/js/13.d0bbae4e.js"><link rel="prefetch" href="/blog/assets/js/14.21f9e483.js"><link rel="prefetch" href="/blog/assets/js/15.e6ce8206.js"><link rel="prefetch" href="/blog/assets/js/16.292c39c9.js"><link rel="prefetch" href="/blog/assets/js/17.55cd3e26.js"><link rel="prefetch" href="/blog/assets/js/18.1dc87e1b.js"><link rel="prefetch" href="/blog/assets/js/19.3bfe02b8.js"><link rel="prefetch" href="/blog/assets/js/20.8db63c74.js"><link rel="prefetch" href="/blog/assets/js/21.bdc1ed13.js"><link rel="prefetch" href="/blog/assets/js/22.fb76049c.js"><link rel="prefetch" href="/blog/assets/js/23.12721abb.js"><link rel="prefetch" href="/blog/assets/js/24.47cacaac.js"><link rel="prefetch" href="/blog/assets/js/25.c855cefa.js"><link rel="prefetch" href="/blog/assets/js/26.d67fbd98.js"><link rel="prefetch" href="/blog/assets/js/27.7295f3b2.js"><link rel="prefetch" href="/blog/assets/js/28.0dd0baad.js"><link rel="prefetch" href="/blog/assets/js/29.421865f9.js"><link rel="prefetch" href="/blog/assets/js/30.d094c5b1.js"><link rel="prefetch" href="/blog/assets/js/31.15b851c4.js"><link rel="prefetch" href="/blog/assets/js/32.6498c96b.js"><link rel="prefetch" href="/blog/assets/js/33.18be8c09.js"><link rel="prefetch" href="/blog/assets/js/34.51d10e86.js"><link rel="prefetch" href="/blog/assets/js/35.2b6b494f.js"><link rel="prefetch" href="/blog/assets/js/36.6c152f49.js"><link rel="prefetch" href="/blog/assets/js/37.e960485f.js"><link rel="prefetch" href="/blog/assets/js/38.b770c05f.js"><link rel="prefetch" href="/blog/assets/js/39.f7d8eafb.js"><link rel="prefetch" href="/blog/assets/js/4.9746700d.js"><link rel="prefetch" href="/blog/assets/js/40.e72b0b4a.js"><link rel="prefetch" href="/blog/assets/js/41.747f2640.js"><link rel="prefetch" href="/blog/assets/js/42.4d2b05ca.js"><link rel="prefetch" href="/blog/assets/js/43.9f78d587.js"><link rel="prefetch" href="/blog/assets/js/44.1eddf20c.js"><link rel="prefetch" href="/blog/assets/js/45.af02d24f.js"><link rel="prefetch" href="/blog/assets/js/47.64b668bf.js"><link rel="prefetch" href="/blog/assets/js/5.1cf360f0.js"><link rel="prefetch" href="/blog/assets/js/6.69767d51.js"><link rel="prefetch" href="/blog/assets/js/7.9fa5e2c8.js"><link rel="prefetch" href="/blog/assets/js/8.f34604ae.js"><link rel="prefetch" href="/blog/assets/js/9.68c84da2.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.abe61e79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>小强解忧杂货铺</h3> <p class="description" data-v-59e6cb88>那一年只追逐自由，现在只能追逐着学不完的知识。</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>陈小强</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.jpeg" alt="小强解忧杂货铺" class="logo"> <span class="site-name">小强解忧杂货铺</span></a> <div class="links"><!----> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DevOps
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>CI/CD相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/cicd/00.html" class="nav-link"><i class="undefined"></i>
+  jenkins + github
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/01.html" class="nav-link"><i class="undefined"></i>
+  Circle CI
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/02.html" class="nav-link"><i class="undefined"></i>
+  私有库搭建
+</a></li></ul></li><li class="dropdown-item"><h4>博客搭建相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/blog/" class="nav-link"><i class="undefined"></i>
+  vuepress 新手指南针
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      基础强化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>语言基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/reg/" class="nav-link"><i class="undefined"></i>
+  正则
+</a></li></ul></li><li class="dropdown-item"><h4>计算机基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/ds/" class="nav-link"><i class="undefined"></i>
+  数据结构
+</a></li></ul></li><li class="dropdown-item"><h4>CSS相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/css/float.html" class="nav-link"><i class="undefined"></i>
+  float布局
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/preprocessor.html" class="nav-link"><i class="undefined"></i>
+  CSS预处理器
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画基础
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation-strong.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画强化
+</a></li></ul></li><li class="dropdown-item"><h4>HTML相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/html/" class="nav-link"><i class="undefined"></i>
+  HTML基础
+</a></li></ul></li><li class="dropdown-item"><h4>Websocket相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/websocket/" class="nav-link"><i class="undefined"></i>
+  Websoket基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端手记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>实际项目相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/project/permission.html" class="nav-link"><i class="undefined"></i>
+  权限管理体系
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/rrweb.html" class="nav-link"><i class="undefined"></i>
+  Rrweb落地龙易保具体实现
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(一)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode02.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(二)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack01.html" class="nav-link"><i class="undefined"></i>
+  CRM平台打包优化篇
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack02.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  CRM平台构建速度优化篇
+</a></li></ul></li><li class="dropdown-item"><h4>组件库相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/component-lib/" class="nav-link"><i class="undefined"></i>
+  组件库开发流程
+</a></li></ul></li><li class="dropdown-item"><h4>移动端相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/moblie/" class="nav-link"><i class="undefined"></i>
+  移动端篇
+</a></li></ul></li><li class="dropdown-item"><h4>浏览器相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/browser/" class="nav-link"><i class="undefined"></i>
+  浏览器兼容篇
+</a></li></ul></li><li class="dropdown-item"><h4>NODE相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/node/" class="nav-link"><i class="undefined"></i>
+  koa中间件原理篇
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Alien-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/blog/avatar.jpeg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    陈小强
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>37</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>27</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DevOps
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>CI/CD相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/cicd/00.html" class="nav-link"><i class="undefined"></i>
+  jenkins + github
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/01.html" class="nav-link"><i class="undefined"></i>
+  Circle CI
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/02.html" class="nav-link"><i class="undefined"></i>
+  私有库搭建
+</a></li></ul></li><li class="dropdown-item"><h4>博客搭建相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/blog/" class="nav-link"><i class="undefined"></i>
+  vuepress 新手指南针
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      基础强化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>语言基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/reg/" class="nav-link"><i class="undefined"></i>
+  正则
+</a></li></ul></li><li class="dropdown-item"><h4>计算机基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/ds/" class="nav-link"><i class="undefined"></i>
+  数据结构
+</a></li></ul></li><li class="dropdown-item"><h4>CSS相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/css/float.html" class="nav-link"><i class="undefined"></i>
+  float布局
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/preprocessor.html" class="nav-link"><i class="undefined"></i>
+  CSS预处理器
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画基础
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation-strong.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画强化
+</a></li></ul></li><li class="dropdown-item"><h4>HTML相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/html/" class="nav-link"><i class="undefined"></i>
+  HTML基础
+</a></li></ul></li><li class="dropdown-item"><h4>Websocket相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/websocket/" class="nav-link"><i class="undefined"></i>
+  Websoket基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端手记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>实际项目相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/project/permission.html" class="nav-link"><i class="undefined"></i>
+  权限管理体系
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/rrweb.html" class="nav-link"><i class="undefined"></i>
+  Rrweb落地龙易保具体实现
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(一)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode02.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(二)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack01.html" class="nav-link"><i class="undefined"></i>
+  CRM平台打包优化篇
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack02.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  CRM平台构建速度优化篇
+</a></li></ul></li><li class="dropdown-item"><h4>组件库相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/component-lib/" class="nav-link"><i class="undefined"></i>
+  组件库开发流程
+</a></li></ul></li><li class="dropdown-item"><h4>移动端相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/moblie/" class="nav-link"><i class="undefined"></i>
+  移动端篇
+</a></li></ul></li><li class="dropdown-item"><h4>浏览器相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/browser/" class="nav-link"><i class="undefined"></i>
+  浏览器兼容篇
+</a></li></ul></li><li class="dropdown-item"><h4>NODE相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/node/" class="nav-link"><i class="undefined"></i>
+  koa中间件原理篇
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Alien-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>实际项目相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/project/" aria-current="page" class="sidebar-link">概览</a></li><li><a href="/blog/note/project/lowCode.html" class="sidebar-link">低代码平台搭建(一)</a></li><li><a href="/blog/note/project/lowCode02.html" class="sidebar-link">低代码平台搭建(二)</a></li><li><a href="/blog/note/project/pack01.html" class="sidebar-link">CRM平台打包优化篇</a></li><li><a href="/blog/note/project/pack02.html" aria-current="page" class="active sidebar-link">CRM平台构建速度优化篇</a></li><li><a href="/blog/note/project/permission.html" class="sidebar-link">权限管理落地方案</a></li><li><a href="/blog/note/project/rrweb.html" class="sidebar-link">Rrweb落地龙易保具体实现</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件库相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/component-lib/" class="sidebar-link">如何构建自己的组件库看这篇就够了</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>移动端相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/moblie/" class="sidebar-link">移动端篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>浏览器相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/browser/" class="sidebar-link">浏览器兼容篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>NODE相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/node/" class="sidebar-link">KOA原理篇</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>CRM平台构建速度优化篇</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>陈小强</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">CRM平台构建速度优化篇</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>陈小强</span></i> <!----> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>打包</span><span class="tag-item" data-v-8a445198>构建速度</span><span class="tag-item" data-v-8a445198>webpack</span><span class="tag-item" data-v-8a445198>性能优化</span></i></div></div> <div class="theme-reco-content content__default"><p>优化起因项目的编译和构建速度特别的慢长达166596ms，两分多钟，这样的开发体验不好，所以有了本次优化。</p> <p>优化前我们可以借助 <code>speed-measure-webpack-plugin</code> 分析我们的打包速度。我们可以看到哪一块的打包时间过长我们具体去优化。 由于本项目页面较多所以打包时间过长。</p> <ol><li>开启多线程运行loader,thread-loader</li></ol> <p>安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install --save-dev thread-loader
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用，在需要开启线程的 loader之前 加上 tread-loader，如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        include: path.resolve('src'),
+        use: [
+          &quot;thread-loader&quot;,
+          // 耗时的 loader （例如 babel-loader）
+        ],
+      },
+    ],
+  },
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>打包成果，未开启多线程时间：166596ms 开启多线程：152348ms，快了10s</p> <ol start="2"><li>使用动态链接库 dll</li></ol> <p>第三方库以 node_modules 为代表，它们庞大得可怕，却又不可或缺。每次构建时都会重新构建一次 vendor；出于对效率的考虑，我们更多是使用 DllPlugin。</p> <p>DllPlugin 是基于 Windows 动态链接库（dll）的思想被创作出来的。这个插件会把第三方库单独打包到一个文件中，这个文件就是一个单纯的依赖库。这个依赖库不会跟着你的业务代码一起被重新打包，只有当依赖自身发生版本变化时才会重新打包。</p> <p>用 DllPlugin 处理文件，要分两步走：</p> <ul><li>基于 dll 专属的配置文件，打包 dll 库</li> <li>基于 webpack.config.js 文件，打包业务代码</li></ul> <p>以下是我在项目中的使用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const webpack = require('webpack')
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const dllPath = path.resolve(__dirname, '../dist') // dll文件存放的目录
+
+const dllPath = path.resolve(__dirname, &quot;../src/assets/dll&quot;);
+
+process.env.NODE_ENV = 'production' // NODE_ENV 设置为 production 减少依赖
+
+module.exports = {
+  entry: {    // 把 vue 相关模块的放到一个单独的动态链接库
+    vendor: [
+      'babel-polyfill',
+      // 'vue',
+      // 'vue-router',
+      'vuex',
+      // 'axios',
+      // 'element-ui',
+      'vue-ueditor-wrap',
+      // 'echarts',
+      'vue-grid-layout',
+      'lodash',
+      'clipboard',
+      'dayjs',
+      'element-china-area-data',
+      'js-cookie',
+      'moment',
+      // 'v-charts',
+      'vuedraggable',
+      'vue-clipboard2',
+      'el-tree-transfer',
+      'fb-ui-component'
+    ]
+  },
+  output: {
+    filename: '[name].js', // 生成vue.dll.js
+    path: dllPath,
+    library: '[name]_[hash]'
+  },
+  plugins: [    
+    new CleanWebpackPlugin( { // 清除之前的dll文件
+      cleanOnceBeforeBuildPatterns: [
+        '*.js',
+      ],
+      root: dllPath
+    }),
+    new webpack.DllPlugin({
+      name: '[name]_[hash]',      // manifest.json 描述动态链接库包含了哪些内容
+      path: path.join(__dirname, &quot;./&quot;, '[name]-manifest.json')
+    })
+  ]
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><p>在需要使用的环境中配置dll插件如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 引用 manifest.json
+new webpack.DllReferencePlugin({
+    context: __dirname,
+    manifest: require('./vendor-manifest.json')
+}),       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>执行 npm run dll 也就是运行这个config文件，会得到一个 vendor-manifest.json</p> <p>通过以上配置打包后 速度从 152348ms 优化到 99967ms。又快了50s</p> <ol start="3"><li>引入 HardSourceWebpackPlugin 缓存打包结果</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code> new HardSourceWebpackPlugin({
+    // cacheDirectory是在高速缓存写入。默认情况下，将缓存存储在node_modules下的目录中
+    // 'node_modules/.cache/hard-source/[confighash]'
+    cacheDirectory: path.join(__dirname, './lib/.cache/hard-source/[confighash]'),
+    // configHash在启动webpack实例时转换webpack配置，
+    // 并用于cacheDirectory为不同的webpack配置构建不同的缓存
+    configHash: function(webpackConfig) {
+    // node-object-hash on npm can be used to build this.
+    return require('node-object-hash')({sort: false}).hash(webpackConfig);
+    },
+    // 当加载器、插件、其他构建时脚本或其他动态依赖项发生更改时，
+    // hard-source需要替换缓存以确保输出正确。
+    // environmentHash被用来确定这一点。如果散列与先前的构建不同，则将使用新的缓存
+    environmentHash: {
+    root: process.cwd(),
+    directories: [],
+    files: ['package-lock.json', 'yarn.lock'],
+    },
+    // An object. 控制来源
+    info: {
+    // 'none' or 'test'.
+    mode: 'none',
+    // 'debug', 'log', 'info', 'warn', or 'error'.
+    level: 'debug',
+    },
+    // Clean up large, old caches automatically.
+    cachePrune: {
+    // Caches younger than `maxAge` are not considered for deletion. They must
+    // be at least this (default: 2 days) old in milliseconds.
+    maxAge: 2 * 24 * 60 * 60 * 1000,
+    // All caches together must be larger than `sizeThreshold` before any
+    // caches will be deleted. Together they must be at least this
+    // (default: 50 MB) big in bytes.
+    sizeThreshold: 50 * 1024 * 1024
+    },
+    }),
+    new HardSourceWebpackPlugin.ExcludeModulePlugin([
+    {
+    test: /.*\.DS_Store/
+    }
+    ]),
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p>打包结果第一次构建速度 99967ms，第二次构建速度为 20486ms。相比于原来第一次构建速度提升了40%，第二次构建提升了87%</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/note/project/pack01.html" class="prev">
+          CRM平台打包优化篇
+        </a></span> <span class="next"><a href="/blog/note/project/permission.html">
+          权限管理落地方案
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.476c488a.js" defer></script><script src="/blog/assets/js/3.3eccb014.js" defer></script><script src="/blog/assets/js/1.1ef0c856.js" defer></script><script src="/blog/assets/js/46.06cb77bc.js" defer></script>
+  </body>
+</html>

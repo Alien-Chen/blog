@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CRM平台打包优化篇 | 小强解忧杂货铺</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="那一年只追逐自由，现在只能追逐着学不完的知识。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.abe61e79.css" as="style"><link rel="preload" href="/blog/assets/js/app.476c488a.js" as="script"><link rel="preload" href="/blog/assets/js/3.3eccb014.js" as="script"><link rel="preload" href="/blog/assets/js/1.1ef0c856.js" as="script"><link rel="preload" href="/blog/assets/js/23.12721abb.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.f6e2f817.js"><link rel="prefetch" href="/blog/assets/js/11.08ab77c7.js"><link rel="prefetch" href="/blog/assets/js/12.db4c5095.js"><link rel="prefetch" href="/blog/assets/js/13.d0bbae4e.js"><link rel="prefetch" href="/blog/assets/js/14.21f9e483.js"><link rel="prefetch" href="/blog/assets/js/15.e6ce8206.js"><link rel="prefetch" href="/blog/assets/js/16.292c39c9.js"><link rel="prefetch" href="/blog/assets/js/17.55cd3e26.js"><link rel="prefetch" href="/blog/assets/js/18.1dc87e1b.js"><link rel="prefetch" href="/blog/assets/js/19.3bfe02b8.js"><link rel="prefetch" href="/blog/assets/js/20.8db63c74.js"><link rel="prefetch" href="/blog/assets/js/21.bdc1ed13.js"><link rel="prefetch" href="/blog/assets/js/22.fb76049c.js"><link rel="prefetch" href="/blog/assets/js/24.47cacaac.js"><link rel="prefetch" href="/blog/assets/js/25.c855cefa.js"><link rel="prefetch" href="/blog/assets/js/26.d67fbd98.js"><link rel="prefetch" href="/blog/assets/js/27.7295f3b2.js"><link rel="prefetch" href="/blog/assets/js/28.0dd0baad.js"><link rel="prefetch" href="/blog/assets/js/29.421865f9.js"><link rel="prefetch" href="/blog/assets/js/30.d094c5b1.js"><link rel="prefetch" href="/blog/assets/js/31.15b851c4.js"><link rel="prefetch" href="/blog/assets/js/32.6498c96b.js"><link rel="prefetch" href="/blog/assets/js/33.18be8c09.js"><link rel="prefetch" href="/blog/assets/js/34.51d10e86.js"><link rel="prefetch" href="/blog/assets/js/35.2b6b494f.js"><link rel="prefetch" href="/blog/assets/js/36.6c152f49.js"><link rel="prefetch" href="/blog/assets/js/37.e960485f.js"><link rel="prefetch" href="/blog/assets/js/38.b770c05f.js"><link rel="prefetch" href="/blog/assets/js/39.f7d8eafb.js"><link rel="prefetch" href="/blog/assets/js/4.9746700d.js"><link rel="prefetch" href="/blog/assets/js/40.e72b0b4a.js"><link rel="prefetch" href="/blog/assets/js/41.747f2640.js"><link rel="prefetch" href="/blog/assets/js/42.4d2b05ca.js"><link rel="prefetch" href="/blog/assets/js/43.9f78d587.js"><link rel="prefetch" href="/blog/assets/js/44.1eddf20c.js"><link rel="prefetch" href="/blog/assets/js/45.af02d24f.js"><link rel="prefetch" href="/blog/assets/js/46.06cb77bc.js"><link rel="prefetch" href="/blog/assets/js/47.64b668bf.js"><link rel="prefetch" href="/blog/assets/js/5.1cf360f0.js"><link rel="prefetch" href="/blog/assets/js/6.69767d51.js"><link rel="prefetch" href="/blog/assets/js/7.9fa5e2c8.js"><link rel="prefetch" href="/blog/assets/js/8.f34604ae.js"><link rel="prefetch" href="/blog/assets/js/9.68c84da2.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.abe61e79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>小强解忧杂货铺</h3> <p class="description" data-v-59e6cb88>那一年只追逐自由，现在只能追逐着学不完的知识。</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>陈小强</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.jpeg" alt="小强解忧杂货铺" class="logo"> <span class="site-name">小强解忧杂货铺</span></a> <div class="links"><!----> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DevOps
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>CI/CD相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/cicd/00.html" class="nav-link"><i class="undefined"></i>
+  jenkins + github
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/01.html" class="nav-link"><i class="undefined"></i>
+  Circle CI
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/02.html" class="nav-link"><i class="undefined"></i>
+  私有库搭建
+</a></li></ul></li><li class="dropdown-item"><h4>博客搭建相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/blog/" class="nav-link"><i class="undefined"></i>
+  vuepress 新手指南针
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      基础强化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>语言基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/reg/" class="nav-link"><i class="undefined"></i>
+  正则
+</a></li></ul></li><li class="dropdown-item"><h4>计算机基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/ds/" class="nav-link"><i class="undefined"></i>
+  数据结构
+</a></li></ul></li><li class="dropdown-item"><h4>CSS相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/css/float.html" class="nav-link"><i class="undefined"></i>
+  float布局
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/preprocessor.html" class="nav-link"><i class="undefined"></i>
+  CSS预处理器
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画基础
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation-strong.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画强化
+</a></li></ul></li><li class="dropdown-item"><h4>HTML相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/html/" class="nav-link"><i class="undefined"></i>
+  HTML基础
+</a></li></ul></li><li class="dropdown-item"><h4>Websocket相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/websocket/" class="nav-link"><i class="undefined"></i>
+  Websoket基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端手记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>实际项目相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/project/permission.html" class="nav-link"><i class="undefined"></i>
+  权限管理体系
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/rrweb.html" class="nav-link"><i class="undefined"></i>
+  Rrweb落地龙易保具体实现
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(一)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode02.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(二)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  CRM平台打包优化篇
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack02.html" class="nav-link"><i class="undefined"></i>
+  CRM平台构建速度优化篇
+</a></li></ul></li><li class="dropdown-item"><h4>组件库相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/component-lib/" class="nav-link"><i class="undefined"></i>
+  组件库开发流程
+</a></li></ul></li><li class="dropdown-item"><h4>移动端相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/moblie/" class="nav-link"><i class="undefined"></i>
+  移动端篇
+</a></li></ul></li><li class="dropdown-item"><h4>浏览器相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/browser/" class="nav-link"><i class="undefined"></i>
+  浏览器兼容篇
+</a></li></ul></li><li class="dropdown-item"><h4>NODE相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/node/" class="nav-link"><i class="undefined"></i>
+  koa中间件原理篇
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Alien-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/blog/avatar.jpeg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    陈小强
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>37</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>27</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DevOps
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4>CI/CD相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/cicd/00.html" class="nav-link"><i class="undefined"></i>
+  jenkins + github
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/01.html" class="nav-link"><i class="undefined"></i>
+  Circle CI
+</a></li><li class="dropdown-subitem"><a href="/blog/devops/cicd/02.html" class="nav-link"><i class="undefined"></i>
+  私有库搭建
+</a></li></ul></li><li class="dropdown-item"><h4>博客搭建相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/devops/blog/" class="nav-link"><i class="undefined"></i>
+  vuepress 新手指南针
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      基础强化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>语言基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/reg/" class="nav-link"><i class="undefined"></i>
+  正则
+</a></li></ul></li><li class="dropdown-item"><h4>计算机基础</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/ds/" class="nav-link"><i class="undefined"></i>
+  数据结构
+</a></li></ul></li><li class="dropdown-item"><h4>CSS相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/css/float.html" class="nav-link"><i class="undefined"></i>
+  float布局
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/preprocessor.html" class="nav-link"><i class="undefined"></i>
+  CSS预处理器
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画基础
+</a></li><li class="dropdown-subitem"><a href="/blog/basic/css/animation-strong.html" class="nav-link"><i class="undefined"></i>
+  CSS 动画强化
+</a></li></ul></li><li class="dropdown-item"><h4>HTML相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/html/" class="nav-link"><i class="undefined"></i>
+  HTML基础
+</a></li></ul></li><li class="dropdown-item"><h4>Websocket相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/basic/websocket/" class="nav-link"><i class="undefined"></i>
+  Websoket基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端手记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>实际项目相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/project/permission.html" class="nav-link"><i class="undefined"></i>
+  权限管理体系
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/rrweb.html" class="nav-link"><i class="undefined"></i>
+  Rrweb落地龙易保具体实现
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(一)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/lowCode02.html" class="nav-link"><i class="undefined"></i>
+  低代码平台搭建(二)
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  CRM平台打包优化篇
+</a></li><li class="dropdown-subitem"><a href="/blog/note/project/pack02.html" class="nav-link"><i class="undefined"></i>
+  CRM平台构建速度优化篇
+</a></li></ul></li><li class="dropdown-item"><h4>组件库相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/component-lib/" class="nav-link"><i class="undefined"></i>
+  组件库开发流程
+</a></li></ul></li><li class="dropdown-item"><h4>移动端相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/moblie/" class="nav-link"><i class="undefined"></i>
+  移动端篇
+</a></li></ul></li><li class="dropdown-item"><h4>浏览器相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/browser/" class="nav-link"><i class="undefined"></i>
+  浏览器兼容篇
+</a></li></ul></li><li class="dropdown-item"><h4>NODE相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/note/node/" class="nav-link"><i class="undefined"></i>
+  koa中间件原理篇
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Alien-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>实际项目相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/project/" aria-current="page" class="sidebar-link">概览</a></li><li><a href="/blog/note/project/lowCode.html" class="sidebar-link">低代码平台搭建(一)</a></li><li><a href="/blog/note/project/lowCode02.html" class="sidebar-link">低代码平台搭建(二)</a></li><li><a href="/blog/note/project/pack01.html" aria-current="page" class="active sidebar-link">CRM平台打包优化篇</a></li><li><a href="/blog/note/project/pack02.html" class="sidebar-link">CRM平台构建速度优化篇</a></li><li><a href="/blog/note/project/permission.html" class="sidebar-link">权限管理落地方案</a></li><li><a href="/blog/note/project/rrweb.html" class="sidebar-link">Rrweb落地龙易保具体实现</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件库相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/component-lib/" class="sidebar-link">如何构建自己的组件库看这篇就够了</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>移动端相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/moblie/" class="sidebar-link">移动端篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>浏览器相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/browser/" class="sidebar-link">浏览器兼容篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>NODE相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/node/" class="sidebar-link">KOA原理篇</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>CRM平台打包优化篇</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>陈小强</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">CRM平台打包优化篇</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>陈小强</span></i> <!----> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>打包</span><span class="tag-item" data-v-8a445198>webpack</span><span class="tag-item" data-v-8a445198>性能优化</span></i></div></div> <div class="theme-reco-content content__default"><p>我们从输入 URL 到显示页面这个过程中，涉及到网络层面的，有三个主要过程：</p> <ul><li>DNS 解析</li> <li>TCP 连接</li> <li>HTTP 请求/响应</li></ul> <p>对于DNS解析和TCP连接这两个步骤，我们前端可以做的努力非常的有限。相比之下，HTTP 连接这一层面的优化才是我们网络优化的核心。</p> <p>HTTP优化有两个大方向：</p> <ul><li>减少请求次数</li> <li>减少单次请求所花费的时间</li></ul> <p>这两个优化点直直地指向了我们日常开发中非常常见的操作——资源的压缩与合并。那么我在开发的时候使用的是webpack，我们就从webpack下手：</p> <h2 id="开始优化"><a href="#开始优化" class="header-anchor">#</a> 开始优化</h2> <p>首先开始优化前需要使用到 webpack-bundle-analyzer 这个非常非常好用的包组成可视化工具。它会以矩形树图的形式将包内各个模块的大小和依赖关系呈现出来。</p> <p>首先我们在进行打包优化时候我们先做好一下几点的优化：</p> <ul><li>路由懒加载</li> <li>异步组件</li></ul> <h3 id="第一步"><a href="#第一步" class="header-anchor">#</a> 第一步</h3> <p>通过 bundle-analyzer的分析 我们可以看到 app.js的style.scss的体积达到了900kb，这是有点大的，所以去源码里面定位发现 多次的引入<code>import '../src/styles/element-variables.scss</code> 进行删除后节约了 500kb</p> <h3 id="第二步-externals-提取项目依赖"><a href="#第二步-externals-提取项目依赖" class="header-anchor">#</a> 第二步，externals 提取项目依赖</h3> <p>从打包分析中可以看到chunk-vendors.js中 vue,vue-router,vuex,element-ui,axios,echarts,v-charts 占据了一定体积，而这些依赖都是比较稳定的不常修改的公共依赖包。所以我们可以把这些依赖包提取出来。这里把ElementUI也提取出来没用按需加载是因为项目中使用到的elment范围很广按需加载优化力度不大，所以直接提取出来。</p> <p>注意：项目中引用到这些依赖的全都换成require引入！！</p> <p>webpack 添加一下配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>externals: {
+  'vue': 'Vue',
+  'vue-router': 'VueRouter',
+  'vuex': 'Vuex',
+  'element-ui': 'ELEMENT',
+  'axios': 'axios',
+  'echarts': 'echarts',
+  'v-charts': 'VeChart'
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>在index.html 中引入CDN：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;script src=&quot;https://lib.baomitu.com/vue/2.7.6/vue.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://lib.baomitu.com/vue-router/3.5.1/vue-router.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://lib.baomitu.com/axios/1.2.1/axios.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://lib.baomitu.com/vuex/3.6.2/vuex.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://lib.baomitu.com/element-ui/2.15.13/index.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="第三步-减小三方依赖的体积"><a href="#第三步-减小三方依赖的体积" class="header-anchor">#</a> 第三步，减小三方依赖的体积</h3> <ol><li>项目中用到moment.js 但是里面有一大部分的语言包没有用到，所以我们需要剔除掉这些语言包的打包，方法如下：</li></ol> <p>使用 moment-locales-webpack-plugin 插件，剔除掉无用的语言包</p> <p>安装：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install moment-locales-webpack-plugin -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+
+module.exports = {
+  configureWebpack: {
+     plugins: [
+       new MomentLocalesPlugin({localesToKeep: ['zh-cn']})
+     ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ol start="2"><li>项目中还用到了 lodash，但是项目中前端小伙伴们全部通过<code>import _ from 'lodash'</code>的方式引入，这样一来lodash的方法会被全部打包的。所以我逐个进行了具体引入如下：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import cloneDeep from 'lodash/cloneDeep'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>通过以上的操作又节约了 400KB</p> <p>重新打包，最新数据如下：</p> <p>打包后的体积：
+<img src="/blog/assets/img/pack01.f5de8ab1.png" alt="npm img"></p> <p>可以看到打包体积由原来的25MB 变为了 19MB, 效果还是非常可观的</p> <h3 id="第四步-压缩js"><a href="#第四步-压缩js" class="header-anchor">#</a> 第四步 压缩js</h3> <p>从分析报告中可以看出来，项目中的源码也占据了很多体积很多个chunk都是几百KB，这边我看出来了webpack没有配置js压缩，这可是个大头：</p> <p>所以我加上了 <code>terser-webpack-plugin</code> 进行压缩js</p> <p>在配置项中引入：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>optimization: {
+ minimizer: [
+  new TerserPlugin({
+     test: /\.js(\?.*)?$/i,
+     parallel: true
+   }),
+ ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>接下来重新打包：</p> <p><img src="/blog/assets/img/pack02.d30dd0cf.png" alt="npm img"></p> <p>打包体积直接从 19MB 到 7.5MB 了，可谓是质的飞跃。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/note/project/lowCode02.html" class="prev">
+          低代码平台搭建(二)
+        </a></span> <span class="next"><a href="/blog/note/project/pack02.html">
+          CRM平台构建速度优化篇
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blog/note/project/pack01.html#开始优化" class="sidebar-link reco-side-开始优化" data-v-b57cc07c>开始优化</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/note/project/pack01.html#第一步" class="sidebar-link reco-side-第一步" data-v-b57cc07c>第一步</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/note/project/pack01.html#第二步-externals-提取项目依赖" class="sidebar-link reco-side-第二步-externals-提取项目依赖" data-v-b57cc07c>第二步，externals 提取项目依赖</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/note/project/pack01.html#第三步-减小三方依赖的体积" class="sidebar-link reco-side-第三步-减小三方依赖的体积" data-v-b57cc07c>第三步，减小三方依赖的体积</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/note/project/pack01.html#第四步-压缩js" class="sidebar-link reco-side-第四步-压缩js" data-v-b57cc07c>第四步 压缩js</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.476c488a.js" defer></script><script src="/blog/assets/js/3.3eccb014.js" defer></script><script src="/blog/assets/js/1.1ef0c856.js" defer></script><script src="/blog/assets/js/23.12721abb.js" defer></script>
+  </body>
+</html>
