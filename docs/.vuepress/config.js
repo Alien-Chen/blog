@@ -133,6 +133,14 @@ const nav = [
           {
             text: '低代码平台搭建(二)',
             link: '/note/project/lowCode02.md'
+          },
+          {
+            text: 'CRM平台打包优化篇',
+            link: '/note/project/pack01.md'
+          },
+          {
+            text: 'CRM平台构建速度优化篇',
+            link: '/note/project/pack02.md'
           }
         ]
       },
