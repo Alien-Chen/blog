@@ -139,8 +139,8 @@ const nav = [
             link: '/note/project/pack01.md'
           },
           {
-            text: 'CRM平台构建速度优化篇',
-            link: '/note/project/pack02.md'
+            text: '记录移动端兼容问题',
+            link: '/note/project/compatibilityMobile.md'
           }
         ]
       },
