@@ -1,6 +1,6 @@
 ---
 sidebarDepth: 2
-title: '低代码-表单提交值的收集'
+title: '低代码(四)-表单提交值的收集'
 tags: 
   - 低代码
   - lowcode
@@ -87,6 +87,7 @@ methods: {
   }
 </script>
 ```
+
 以上逻辑就能帮助我们实现动态往提交值中插入对象并切取出提交值了。
 
 第三步，我们需要如何将子表单的事件派发到formRender中接收呢，可以在定义一个派发方法 dispatch 它接收3个参数 componentName（目标组件名）、eventName（事件名称），params （参数）。

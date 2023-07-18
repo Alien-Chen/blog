@@ -140,7 +140,11 @@ const nav = [
           },
           {
             text: '低代码(四)-表单提交值的收集',
-            link: '/note/project/lowCode03.md'
+            link: '/note/project/lowCode04.md'
+          },
+          {
+            text: '低代码(五)-动态表单的表单验证',
+            link: '/note/project/lowCode05.md'
           },
           {
             text: 'CRM平台打包优化篇',
