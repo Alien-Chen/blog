@@ -135,6 +135,10 @@ const nav = [
             link: '/note/project/lowCode02.md'
           },
           {
+            text: '低代码(三)-可编程的动态表单',
+            link: '/note/project/lowCode03.md'
+          },
+          {
             text: 'CRM平台打包优化篇',
             link: '/note/project/pack01.md'
           },
